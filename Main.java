@@ -15,6 +15,9 @@ public class Main {
 
 		HashMap<String, String> userSelection = new HashMap<>();
 
+		boolean punctuationOnlyAtEndOfWord = false;
+		boolean symbolsOnlyAtEndOfWord = false;
+
 		Scanner userInput = new Scanner(System.in);
 
 		System.out.println("");
@@ -23,7 +26,12 @@ public class Main {
 		System.out.println("Y/N");
 		if(userInput.nextLine().toUpperCase() == "Y") {
 
-
+			System.out.println("Use Alphabet Y/N ?");
+			
+			if(userInput.nextLine().toUpperCase() == "Y") {
+				
+				HashMap.put("Alphabet", alphabet);
+			}
 		}
 
 
